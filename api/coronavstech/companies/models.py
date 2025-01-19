@@ -9,7 +9,6 @@ class Company(models.Model):
         LAOFFS = "Layoffs"
         HIRING_FREEZE = "Hiring Freeze"
         HIRING = "Hiring"
-
     name = models.CharField(max_length=30, unique=True)
     status = models.CharField(
         choices=CompanyStatus.choices, default=CompanyStatus.HIRING, max_length=30

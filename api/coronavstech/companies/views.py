@@ -3,6 +3,8 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.viewsets import ModelViewSet
 from .models import Company
 from .serializers import CompanySerializer
+# from api.coronavstech.companies.models import Company
+# from api.coronavstech.companies.serializers import CompanySerializer
 # Create your views here.
 
 
