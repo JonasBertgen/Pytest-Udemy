@@ -27,5 +27,4 @@ jobs:
         pip install django
     - name: Run Tests
       run: |
-        cd api/coronavstech/companies/tests
-        pytest -v -s --durations=0
+        pytest api/coronavstech -s -v --durations=0
