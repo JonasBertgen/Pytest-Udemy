@@ -23,9 +23,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
+        pip install -r requirements.txt
         pip install django
     - name: Run Tests
       run: |
-        cd api/coronavstech/companies/tests
-        pytest -v -s --durations=0
+        pytest api/coronavstech -s -v --durations=0
